@@ -20,10 +20,21 @@ export default function App() {
     <View style={styles.containerSearch}>
       <TextInput
       placeholder='Digite o filme que deseja buscar'
+      style={styles.inputSearch}
       ></TextInput>
+      <TouchableOpacity>
+      <Feather name="search" size={24} color="black"/>
+      </TouchableOpacity>
     </View>
 
+          {/* Inicio do banner */}
+    
+    <Text style={styles.textBanner}> Em cartaz </Text>
+
+    <Image source={require('./assets/images.webp')} style={styles.imageBanner}/>
+
     </View>
+
   );
 }
 
@@ -49,6 +60,29 @@ const styles = StyleSheet.create({
   containerSearch: {
     marginTop: 20,
     width:"90%",
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderRadius: 5,
+    padding: 8,
+    alignItems: 'center'
+  },
+  inputSearch:{
+    height: 40,
+    padding: 8,
+    width: "100%"
+  },
+  imageBanner:{
+    width: "50%",
+    height: "50%",
+    marginTop: 15,
+    borderRadius: 10,
+  },
+  textBanner: {
+    color: 'white',
+    width: '90%',
+    fontSize: 30,
+    marginTop:20,
+    fontWeight:'bold',
   }
 });
