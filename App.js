@@ -32,6 +32,15 @@ export default function App() {
     <Text style={styles.textBanner}> Em cartaz </Text>
 
     <Image source={require('./assets/images.webp')} style={styles.imageBanner}/>
+    <Image source={require('./assets/o diabo veste prada 2.jpg')} style={styles.imageBanner}/>
+    <Image source={require('./assets/Backrooms_(filme).webp')} style={styles.imageBanner}/>
+    <Image source={require('./assets/authentic games.jpg')} style={styles.imageBanner}/>
+    <Image source={require('./assets/Interstellar_Filme.png')} style={styles.imageBanner}/>
+    <Image source={require('./assets/rambo.jpg')} style={styles.imageBanner}/>
+    <Image source={require('./assets/Sonic_the_Hedgehog_2019.jpg')} style={styles.imageBanner}/>
+    <Image source={require('./assets/demon slayer.webp')} style={styles.imageBanner}/>
+    <Image source={require('./assets/whiplast.jpg')} style={styles.imageBanner}/>
+    <Image source={require('./assets/o gambito da rainha.jpg')} style={styles.imageBanner}/>
 
     </View>
 
@@ -73,8 +82,8 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   imageBanner:{
-    width: "50%",
-    height: "50%",
+    width: "70%",
+    height: "40%",
     marginTop: 15,
     borderRadius: 10,
   },
