@@ -2,16 +2,18 @@ import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
     imageBanner:{
-        width: "70%",
-        height: "40%",
-        marginTop: 15,
+        width: "90%",
+        height: "20%",
+        marginTop: 30,
+        marginBottom: 30,
         borderRadius: 10,
+        gap: 10,
       },
       textBanner: {
         color: 'white',
         width: '90%',
-        fontSize: 30,
-        marginTop:20,
+        fontSize: 25,
+        marginTop: 30,
         fontWeight:'bold',
       }
 })
