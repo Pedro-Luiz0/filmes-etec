@@ -4,6 +4,7 @@ import Search from './src/components/Search/index.js';
 import Banner from './src/components/Banner/index.js';
 import Filmes from './data/filmes.js';
 import { FlatList } from 'react-native-web';
+import CardMovies from './src/components/CardMovies/index.js';
 
 export default function App() {
   return (
@@ -23,22 +24,11 @@ export default function App() {
             keyExtractor={(item) => item.id.toString()}
 
             renderItem={({ item }) => (
-              <TouchableOpacity style={styles.containerFilmes}>
-
-                <Image
-                  style={styles.images}
-                  source={{ uri: item.imagem }}
+             <CardMovies
+                    titulo={item.nome}
+                    imagem={item.imagem}
+                    nota={item.nota}
                 />
-
-                <Text style={styles.titulo}>
-                  {item.nome}
-                </Text>
-
-                <Text style={styles.textNota}>
-                  Nota: {item.nota}
-                </Text>
-
-              </TouchableOpacity>
             )}
           />
 
