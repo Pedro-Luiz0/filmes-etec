@@ -1,6 +1,6 @@
-import {stylesheet} from "react-native";
+import {StyleSheet} from "react-native";
 
-const syles = Stylesheet.create({
+const styles = StyleSheet.create({
 
     containerJogos:{
         paddingTop:20,
@@ -26,3 +26,5 @@ const syles = Stylesheet.create({
         borderRadius: 8
     }
 })
+
+export default styles;
