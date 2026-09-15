@@ -10,7 +10,7 @@ export default function CardMovies({titulo,nota,imagem}){
         <Image style={styles.images} source={{uri:imagem}}></Image>
         <Text style={styles.titulo}>{titulo} </Text>
 
-        <Text style={style.textNota}> {nota} </Text>
+        <Text style={styles.textNota}> {nota} </Text>
         
         </TouchableOpacity>
     )

@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         paddingBotom:16,
         paddingRight:16,
         width:140,
-        height:28
+        height:280
 
     },
     titulo:{
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     images:{
         width: '100%',
         height:170,
-        borderRadius: 8
+        borderRadius: 18
     }
 })
 

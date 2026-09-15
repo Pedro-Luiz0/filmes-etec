@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         paddingBottom:16,
         paddingRight:16,
         width:140,
-        heigh:28
+        height:28
     },
 
     titulo:{
