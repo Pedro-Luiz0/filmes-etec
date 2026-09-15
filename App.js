@@ -1,41 +1,15 @@
-import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import Header from './src/components/Header/index.js';
 import Search from './src/components/Search/index.js';
 import Banner from './src/components/Banner/index.js';
 import Filmes from './data/filmes.js';
 import { FlatList } from 'react-native-web';
 import CardMovies from './src/components/CardMovies/index.js';
+import Rotas from './src/Rotas/index.js';
 
 export default function App() {
   return (
-    <ScrollView>
-      <View style={styles.container}>
-
-        <Header />
-        <Search />
-        <Banner />
-
-        <View style={{width: '90%'}}>
-
-          <FlatList
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            data={Filmes}
-            keyExtractor={(item) => item.id.toString()}
-
-            renderItem={({ item }) => (
-             <CardMovies
-                    titulo={item.nome}
-                    imagem={item.imagem}
-                    nota={item.nota}
-                />
-            )}
-          />
-
-        </View>
-
-      </View>
-    </ScrollView>
+    <Rotas></Rotas>
   );
 }
 
