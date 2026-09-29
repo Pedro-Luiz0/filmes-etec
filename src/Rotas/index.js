@@ -9,7 +9,7 @@ export default function Rotas(){
     return(
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen component={Home} name="Home"/>
+                <Stack.Screen component={Home} name="Home" options={{headerShown:false}} />
                 <Stack.Screen component={Detalhes} name = 'Detalhes'/>
             </Stack.Navigator>
         </NavigationContainer>
